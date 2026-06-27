@@ -1,0 +1,31 @@
+What is etcd?
+
+It is a distrubutes reliable key-value store that is simple, secure and fast.
+Traditionally DB's are in Tabular format using columns and rows. But Key-Value is different.
+Whenever you need to add data to a Table in DB you ll need to insert a new column or row which might lead to have empty cells unused.
+In ETCD Each entry has its own table so that the cells won't be unused.
+You can take example of Employee table and watch here is you don't remember.
+
+Example:
+
+key: name
+value: John Doe
+
+Key: location
+value: New York
+
+key: user: John_doe
+value: name=John Doe, age=45, location=NewYork
+
+How to download ETCD?
+
+1) Download Binaries - curl -L <Github Path> -o tar xzvf etcd-v3.3.11-linux-amd64.tar.gz
+2) Extract - tar xzvf etcd-v3.3.11-linux-amd64.tar.gz
+3) Run - ./etcd
+
+Note: When we start etcd it starts with port 2379. Then you attach any client's to the etcd to store or retrieve the information.
+
+Default client for etcd is etcdctl which is used for setting key value pairs.
+
+Command: ./etcdctl set key1 value1
+./etcdctl put key1 value1
