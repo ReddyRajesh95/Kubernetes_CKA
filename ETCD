@@ -29,3 +29,9 @@ Default client for etcd is etcdctl which is used for setting key value pairs.
 
 Command: ./etcdctl set key1 value1
 ./etcdctl put key1 value1
+
+etcd in kuberneres:-
+
+* etcd stores the information of Nodes, Pods, Configs, Secrets, Accounts, Roles, Bindings and others.
+* Every command you run using kubectl you get the information from etcd. Every change you make to these will be saves in etcd server.
+* 
