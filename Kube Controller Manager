@@ -1,0 +1,17 @@
+Kube Controller Manager:
+There are many controllers inside the kube controller Manager and below are the list.
+
+All these controllers are present in the kube controller manager and when you install the kube controller manager you'll get all the below controllers installed automatically.
+
+Deployment Controller
+Namespace Controller
+Endpoint Controller
+Job Controller
+PV - Protection Controller
+Service-Account-Controller
+Stateful-Set
+Replicaset
+Node-Controller
+PV-Binder-Controller
+Replication Controller
+CronJob
