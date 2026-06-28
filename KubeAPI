@@ -17,3 +17,7 @@ Download it from kubernetes release page
 You can check the kubeapi server in below config file
 
 kube-apiserver.service
+
+Kube-apiserver.service file contains lots of configurations which includes the certificates (cacert,key etc.) and these are important.
+
+If you want to install kubeapi server manually you can download it from the kubernetes documentation from the website.
