@@ -1,0 +1,12 @@
+Kubeapi: This is the primary management component in kubernetes.
+
+When you run the kubectl command it reached to the master node and reaches to the kubeapi(Authenticates and validates) then it retrieves data from ETCD cluster and then again to the kubeapi and kubeapi passes the information to the kubelet in the worker node.
+
+Example: If you need to create a POD or when you give the command to create a POD below is the sequence that takes place.
+
+Authenticate User --> Kubeapi
+Validate request --> kubeapi
+Retrieve data --> kubeapi
+Update ETCD --> ETCD Cluster
+scheduled --> Keeps monitor the new POD and Node and send back to the kubeapi
+Kubelet --> kubeapi send info to the kubelet to create the POD. Container run time engine deploys the POD and confirm kubelet and kubelet confirms kubeapi
