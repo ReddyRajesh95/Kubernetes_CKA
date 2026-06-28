@@ -10,3 +10,10 @@ Retrieve data --> kubeapi
 Update ETCD --> ETCD Cluster
 scheduled --> Keeps monitor the new POD and Node and send back to the kubeapi
 Kubelet --> kubeapi send info to the kubelet to create the POD. Container run time engine deploys the POD and confirm kubelet and kubelet confirms kubeapi
+
+How to install Kubeapi server in master node?
+
+Download it from kubernetes release page
+You can check the kubeapi server in below config file
+
+kube-apiserver.service
